@@ -1,0 +1,31 @@
+/*!
+ * @author    Wolfgang Kowarschick <kowa@hs-augsburg.de>
+ * @copyright 2016
+ * @license   CC-BY-NC-SA-4.0
+ */
+
+body
+{
+  text-align:       center;
+  padding:          10px;
+  background-color: #AAA;
+}
+
+h1
+{
+  font-family: Verdana, Geneva, sans-serif
+}
+
+#canvas
+{
+  border-color: #777;
+  border-width: 2px;
+  border-style: solid;
+
+  background-color: #CCC;
+}
+
+.hidden
+{
+  display: none;
+}

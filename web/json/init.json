@@ -1,0 +1,108 @@
+{
+  "canvas":
+  {
+    "element": "canvas",
+    "width":   400,
+    "height":  300
+  },
+
+  "images":
+  {
+    "owl": "img/owl-150.png",
+    "tux": "img/tux-150.png"
+  },
+
+  "game":
+  {
+    "fps": 120,
+
+    "welcome":   "Willkommen bei MiniPong",
+    "ballLost":  "Das Spiel ist vorbei :-(",
+
+    "startGame": "Spiel starten",
+    "stopGame":  "Spiel beenden"
+  },
+
+  "model":
+  {
+    "buttonStartStop":
+    {},
+
+    "ball":
+    {
+      "r":   15,
+      "pos": { "x": 195 , "y": 10 },
+      "vel": { "x": { "min":  50, "max": 200 },
+               "y": { "min": 150, "max": 200 }
+             }
+    },
+
+    "paddle":
+    {
+      "width":    50,
+      "height":    8,
+      "pos":      {"x": 175, "y": 287},
+      "vel":      {"x": 100, "y":   0},
+      "acc":      {"x": 500, "y":   0},
+      "friction": 0.3
+    },
+
+    "info":
+    {
+      "pos": {"x": 10, "y": 130}
+    },
+
+    "score":
+    {
+      "pos":      {"x": 5, "y": 3},
+      "template": "Punkte: $1",
+      "value":    0
+    }
+  },
+
+  "view":
+  {
+    "buttonStartStop":
+    {
+      "elementID": "button_start_stop"
+    },
+
+    "ball":
+    {
+      "color":       "#55AA55",
+      "borderWidth": 1,
+      "borderColor": "#000000",
+      "image":        "owl"
+    },
+
+    "paddle":
+    {
+      "color":       "#aa55cc",
+      "borderWidth": 1,
+      "borderColor": "#000000"
+    },
+
+    "info":
+    {
+      "color":     "#000000",
+      "font":      "bold 25px Verdana, Geneva, sans-serif",
+      "textAlign": "center"
+    },
+
+    "score":
+    {
+      "color":  "#000000",
+      "font":   "bold 20px \"Courier New\", Courier, monospace",
+      "textBaseline": "top"
+    }
+  },
+
+  "control":
+  {
+    "player":
+    {
+      "left":  {"key": "ArrowLeft",  "keyCode": 37},
+      "right": {"key": "ArrowRight", "keyCode": 39}
+    }
+  }
+}
